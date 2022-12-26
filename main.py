@@ -1,9 +1,11 @@
 import yfinance as yf
+import os
 import time
 import math
 import numpy as np
 import math
 import numpy as np
+import pandas as pd
 import tensorflow as tf
 from termcolor import colored
 from tensorflow.keras.models import load_model
@@ -17,10 +19,34 @@ plt.style.use('fivethirtyeight')
 
 start_time = time.time()
 real_time = str(time.strftime("%Y-%m-%d"))
+for i in range(1):
+    start_time = time.time()
+    real_time = str(time.strftime("%Y-%m-%d %H-%M-%S"))
+    print([real_time,start_time])
+    time.sleep(1)
+    data = open('time.csv',"a")
+    data.write(str(real_time))
+    data.write(",")
+    data.write(str(int(start_time)))
+    data.write(",")
+    data.write("\n")
+    data.close()
+
+    for i in range(1):
+        data_f = pd.read_csv('time.csv')
+        data_tt = data_f.filter(["timetime"])
+        data_dt = data_f.filter(["Datetime"])
+
+        fig, axs = plt.subplots(2)
+        axs[0].plot(data_tt)
+        plt.savefig('time.png')
+
 
 dfuid = yf.download("AXS-BTC",start="2014-01-01",end=real_time,interval="1d")
 
 print(dfuid)
+
+plt.plot()
 
 data_filter_AXSBTC_Close = dfuid.filter(["Close"])
 
