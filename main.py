@@ -1,3 +1,79 @@
+file_name_pandas = "pandas.csv"
+import yfinance as yf
+dikry = yf.download("AXS-BTC",start="2020-04-01",end="2023-01-01",interval="1d")
+#print(dikry)
+import pandas as pd
+data_pandas = pd.DataFrame(dikry)
+print(data_pandas.shape)
+import os
+open_file_pandas = data_pandas.to_csv(file_name_pandas)
+import time
+
+import math
+import numpy as np
+import math
+import numpy as np
+
+import tensorflow as tf
+from termcolor import colored
+from tensorflow.keras.models import load_model
+from tensorflow.keras.models import save_model
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, LSTM
+from sklearn.preprocessing import MinMaxScaler
+import matplotlib.pyplot as plt
+epochs = 1
+plt.style.use('fivethirtyeight')
+
+start_time = time.time()
+real_time = str(time.strftime("%Y-%m-%d"))
+for i in range(1):
+    start_time = time.time()
+    real_time = str(time.strftime("%Y-%m-%d %H-%M-%S"))
+    print([real_time,start_time])
+    time.sleep(0.04)
+    data = open('time.csv',"a")
+    data.write(str(real_time))
+    data.write(",")
+    data.write(str(int(start_time)))
+    data.write(",")
+    data.write(str(int(data_pandas.shape[0])))
+    data.write(",")
+    data.write("\n")
+    data.close()
+
+    for i in range(1):
+        data_f = pd.read_csv('time.csv')
+        data_tt = data_f.filter(["timetime"])
+        data_dt = data_f.filter(["Datetime"])
+
+        fig, axs = plt.subplots(4,2)
+        axs[0,0].plot(data_tt)
+        plt.savefig('time.png')
+
+        data_f = pd.read_csv('time.csv')
+        data_tt1 = data_f.filter(["timetime"])
+        data_dt1 = data_f.filter(["Datetime"])
+        data_dtd = data_f.filter(["AXSBTC_day"])
+
+        data_pandas_100 = data_pandas.tail(100)
+        data_pandas_10 = data_pandas.tail(100)
+
+        axs[1, 0].plot(data_pandas['Open'],"-g")
+
+        axs[1, 1].plot(data_pandas['Close'],"*r")
+
+        axs[2, 0].plot(data_pandas_100['High'], "cyan")
+
+        axs[2, 1].plot(data_pandas_100['Low'], "magenta")
+
+        axs[3, 0].plot(data_pandas_10['Volume'], "cyan")
+
+        axs[3, 1].plot(data_pandas_10['Volume'], "magenta")
+
+        plt.savefig('data_dtd.png')
+exit()
+
 import yfinance as yf
 import os
 import time
