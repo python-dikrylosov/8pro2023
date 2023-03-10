@@ -1,5 +1,5 @@
 <div id="header" align="center">
-  <img src="https://giphy.com/stickers/code-creating-rockd-hqU2KkjW5bE2v2Z7Q2" width="10"/>
+  <img src="https://giphy.com/stickers/code-creating-rockd-hqU2KkjW5bE2v2Z7Q2" width="100"/>
 </div>
 # 8pro2023
 8 поток python-разработчик
