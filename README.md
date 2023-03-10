@@ -8,6 +8,8 @@
   </a>
 </div>
 
+<img src="https://komarev.com/ghpvc/?username=your-github-username&style=flat-square&color=blue" alt=""/>
+
 # 8pro2023
 8 поток python-разработчик
 
