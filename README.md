@@ -1,6 +1,9 @@
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/hqU2KkjW5bE2v2Z7Q2/giphy.gif" width="200"/>
 </div>
+<div id="badges">
+  <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
+</div>
 # 8pro2023
 8 поток python-разработчик
 
