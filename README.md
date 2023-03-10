@@ -2,7 +2,7 @@
   <img src="https://media.giphy.com/media/hqU2KkjW5bE2v2Z7Q2/giphy.gif" width="200"/>
 </div>
 <div id="badges">
-  <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
+  <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge", link="https://www.youtube.com/channel/UCUkkCRM55x7MzTqkGYDp_GQ"/>
 </div>
 # 8pro2023
 8 поток python-разработчик
