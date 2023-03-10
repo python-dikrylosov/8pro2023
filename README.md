@@ -10,6 +10,8 @@
 
 <img src="https://komarev.com/ghpvc/?username=python-dikrylosov&style=flat-square&color=blue" alt=""/>
 
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=python-dikrylosov&theme=dark&background=000000)](https://git.io/streak-stats)
+
 # 8pro2023
 8 поток python-разработчик
 
