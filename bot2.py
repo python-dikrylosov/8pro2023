@@ -28,8 +28,8 @@ TOKEN = password.TOKEN
 # user_last_name = message.from_user.last_name
 # user_username = message.from_user.username
 # Создаем бота
-bot = telebot.TeleBot(TOKEN)
-CHANNEL_NAME = password.CHANNEL_NAME
+bot = telebot.TeleBot(TOKEN) #Узнаем у botFather
+CHANNEL_NAME = password.CHANNEL_NAME # смотрим в отдельном боте
 import pandas as pd
 start_time = time.time()
 
