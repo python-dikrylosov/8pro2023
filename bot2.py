@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import paasword
 import random
 import os
 import math
@@ -20,7 +21,7 @@ import time
 from imageai.Detection import ObjectDetection
 import telebot
 from telebot import types
-TOKEN = "5766014506:AAGU034zYpSwtNYp3bxA-_3LxqLiUz8HOoQ"
+TOKEN = password.TOKEN
 # Адрес телеграм-канала, начинается с @
 # user_id = message.from_user.id
 # user_first_name = message.from_user.first_name
@@ -28,7 +29,7 @@ TOKEN = "5766014506:AAGU034zYpSwtNYp3bxA-_3LxqLiUz8HOoQ"
 # user_username = message.from_user.username
 # Создаем бота
 bot = telebot.TeleBot(TOKEN)
-CHANNEL_NAME = '-816129217'
+CHANNEL_NAME = password.CHANNEL_NAME
 import pandas as pd
 start_time = time.time()
 
