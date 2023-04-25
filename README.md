@@ -1,3 +1,6 @@
+Открываем файл prediction_bot_python_dikry_2023_04_25.txt
+Копируем текст, вставляем в окно браузера и запускаем в колаборатори
+
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/hqU2KkjW5bE2v2Z7Q2/giphy.gif" width="200"/>
 </div>
